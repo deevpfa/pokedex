@@ -14,6 +14,8 @@ let telon = document.getElementById("telon")
 let open = document.getElementById("open")
 let circulo = document.getElementById("circulo")
 let bienvenida = document.getElementById("bienvenida")
+let input = document.querySelector("input")
+let botonA = document.getElementById("botonA")
 
 let contador = 0
 open.addEventListener("click", () => {
@@ -47,12 +49,13 @@ function pokemon(n) {
             defense.innerHTML = "Defense: " + resp.stats[2].base_stat
             tipo.innerHTML = capitalizar(resp.types[0].type.name)
             removeColor(resp.types[0].type.name)
+            bienvenida.style.zIndex = "-2"
+            principal.removeAttribute("hidden")
         })
+
 }
 for (let pokemonItem of pokemonList) {
     pokemonItem.addEventListener("click", (e) => {
-        bienvenida.style.zIndex = "-2"
-        principal.removeAttribute("hidden")
         var contenido = e.target.textContent.split('.')[0]
         pokemon(contenido)
     })
@@ -89,6 +92,19 @@ next.addEventListener("click", () => {
     search(u)
 })
 
+// BUSCADOR
+input.addEventListener("keypress", (e)=>{
+    if (e.keyCode==13) {
+        pokemon(input.value)
+        botonA.style.backgroundColor = "rgb(93, 93, 97)"
+    }
+})
+input.addEventListener("keyup", (e)=>{
+    if (e.keyCode==13) {
+        botonA.style.backgroundColor = "rgba(55,56,60,1)"
+    }
+})
+    
 // CAMBIO DE COLOR DEPENDIENDO EL TIPO
 
 arrayType = ["bug", "poison", "dragon", "electric", "ghost", "fighting", "fire", "flying", "grass", "ice", "psychic", "normal", "water", "rock"]
