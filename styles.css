@@ -217,11 +217,11 @@
     right: 0;
 }
 .telon{
-    margin-left: 33em;
+    margin-left: 30em;
     position: absolute;
     background-color: white;
     margin-top: -1px;
-    width: 28em;
+    width: 30em;
     height: 25em;
     z-index: 1;
     opacity: 1;

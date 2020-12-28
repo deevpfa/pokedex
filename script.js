@@ -18,7 +18,7 @@ open.addEventListener("click", ()=>{
     if (contador==0) {
         open.innerHTML = "CLEAR"
         telon.style.opacity = "0"
-        setTimeout(()=>{telon.style.zIndex = "0"}, 10000)
+        setTimeout(()=>{telon.style.zIndex = "0"}, 1500)
         contador++
     }
     else{
