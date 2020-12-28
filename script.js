@@ -10,6 +10,24 @@ let defense= document.getElementById("defense")
 let attack= document.getElementById("attack")
 let tipo= document.getElementById("tipo")
 let principal= document.getElementById("principal")
+let telon= document.getElementById("telon")
+let open= document.getElementById("open")
+
+let contador = 0
+open.addEventListener("click", ()=>{
+    if (contador==0) {
+        open.innerHTML = "CLEAR"
+        telon.style.opacity = "0"
+        setTimeout(()=>{telon.style.zIndex = "0"}, 10000)
+        contador++
+    }
+    else{
+        open.innerHTML = "OPEN"
+        telon.style.opacity = "1"
+        telon.style.zIndex = "1"
+        contador--
+    }
+})
 
 let capitalizar = (s) => s[0].toUpperCase() + s.substr(1); 
 function pokemon(n) {
