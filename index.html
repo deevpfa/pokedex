@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>POKEDEX</title>
 </head>
+
 <body>
     <div class="up">
-        <span class="circulo"></span>
+        <span class="circulo" id="circulo"></span>
         <div class="container-circulos">
             <span class="circulo1"></span>
             <span class="circulo2"></span>
@@ -19,8 +21,11 @@
     <div class="middle">
         <div class="uno">
             <div class="container-principal">
+                <div class="bienvenida" id="bienvenida">
+                    <p>Hello!! <br> Open the Pokedex and <br> Choose your Pokemon!</p>
+                </div>
                 <div class="container2-principal">
-                    <div class="principal" hidden id="principal">
+                    <div class="principal principal-color" hidden id="principal">
                         <div class="principal-div1">
                             <p id="nombre">VULPIX</p>
                             <p id="numero">#0376</p>
@@ -48,8 +53,12 @@
                     <span class="flecha3"></span>
                 </div>
                 <div class="letras">
-                    <div class="a"><p>A</p></div>
-                    <div class="b"><p>B</p></div>
+                    <div class="a">
+                        <p>A</p>
+                    </div>
+                    <div class="b">
+                        <p>B</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,4 +103,5 @@
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>

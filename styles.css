@@ -89,6 +89,22 @@
     align-items: center;
     justify-content: center;
 }
+.bienvenida{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 22em;
+    height: 15em;
+    background-color: black;
+    z-index: 1;
+    color: white;
+}
+.bienvenida p{
+    line-height: 36px;
+}
 .container2-principal{
     width: 90%;
     height: 90%;
@@ -100,8 +116,10 @@
 .principal{
     width: 90%;
     height: 90%;
-    background-color: red;
     border-radius: 10px;
+}
+.principal-color{
+    background-color: red;
 }
 .principal-div1,.principal-div2,.principal-div3{
     width: 90%;
@@ -289,4 +307,45 @@
 }
 .pagination li:hover{
     background-color: rgb(156, 174, 211);
+}
+
+.bug,.poison{
+    background-color: brown;
+} 
+
+.dragon{
+    background-color: red;
+}
+.electric{
+    background-color: yellow;
+}
+.ghost{
+    background-color: whitesmoke;
+} 
+.fighting{
+    background-color: blue;
+} 
+.fire{
+    background-color: firebrick;
+}
+.fairy{
+    background-color: aqua;
+}
+.flying{
+    background-color: lightblue;
+}
+.grass{
+    background-color: green;
+}
+.ice,.psychic{
+    background-color: whitesmoke;
+}
+.normal{
+    background-color: violet;
+}
+.water{
+    background-color: aqua;
+}
+.rock{
+    background-color: grey;
 }
